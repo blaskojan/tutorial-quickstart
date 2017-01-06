@@ -30,13 +30,11 @@ RUN apk --update add \
 	&& sed -i 's#"\/var\/www\/localhost\/htdocs#"\/app\/www#g' /etc/apache2/httpd.conf \
 	&& sed -i 's#AllowOverride None#AllowOverride All#g' /etc/apache2/httpd.conf 
 
-#RUN php5-xdebug
-
 COPY . /app
 WORKDIR /app
 
 RUN chmod 777 log temp
-	#&& rm -rf composer* Dockerfile .git
+	&& rm -rf composer* Dockerfile docker* .git
 	
 EXPOSE 80
 CMD ["httpd","-D","FOREGROUND"]
