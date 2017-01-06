@@ -4,6 +4,6 @@ parameters:
 database:
 	dsn: 'mysql:host=nettequickstartdb;port=3306;dbname=nettedb'
 	user: nette
-	password: pass123
+	password: asd123
 	options:
 		lazy: yes
