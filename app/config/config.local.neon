@@ -2,8 +2,8 @@ parameters:
 
 
 database:
-	dsn: 'mysql:host=127.0.0.1;dbname=test'
-	user:
-	password:
+	dsn: 'mysql:host=nettequickstartdb;port=3306;dbname=nettedb'
+	user: nette
+	password: pass123
 	options:
 		lazy: yes

@@ -1,0 +1,24 @@
+web:
+    container_name: nette_quickstart
+    dockerfile: Dockerfile
+    build: .
+    links: 
+        - db
+    ports:
+        - 8082:80
+    volumes:
+        - ./:/app
+
+db:
+    container_name: nettequickstartdb
+    image: percona
+    environment:
+        - MYSQL_ROOT_PASSWORD=pass123
+        - MYSQL_USER=nette
+        - MYSQL_PASSWORD=pass123
+        - MYSQL_DATABASE=nettedb
+    ports:
+      - 3307:3306
+    volumes:
+      - ./docker/data:/docker-entrypoint-initdb.d
+  
