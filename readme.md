@@ -14,7 +14,9 @@ Requirements
 ------------
 
 [Composer](https://doc.nette.org/composer).
+
 [Docker](https://docs.docker.com/engine/installation/)
+
 [Docker Compose](https://docs.docker.com/compose/)
 
 
@@ -22,6 +24,7 @@ Installation
 ------------
 
 $ composer install
+
 $ docker-compose up
 
 
