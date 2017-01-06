@@ -13,9 +13,9 @@ db:
     container_name: nettequickstartdb
     image: percona
     environment:
-        - MYSQL_ROOT_PASSWORD=pass123
+        - MYSQL_ROOT_PASSWORD=asd123
         - MYSQL_USER=nette
-        - MYSQL_PASSWORD=pass123
+        - MYSQL_PASSWORD=asd123
         - MYSQL_DATABASE=nettedb
     ports:
       - 3307:3306
