@@ -13,7 +13,7 @@ on security and performance and is definitely one of the safest PHP frameworks.
 Requirements
 ------------
 
-[Composer](https://doc.nette.org/composer).
+[Composer](https://doc.nette.org/composer)
 
 [Docker](https://docs.docker.com/engine/installation/)
 
@@ -37,8 +37,12 @@ http://locahost:8082
 Database
 ----------------
 Host - localhost
+
 Port -  3307
+
 User - nette
+
 Password - asd123
+
 dbname - nettedb
 
